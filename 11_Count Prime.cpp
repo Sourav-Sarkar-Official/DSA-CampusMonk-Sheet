@@ -3,6 +3,8 @@ This is optimal approach
 to find count of prime numbers less than n 
 using Sieve of Eratosthenes algorithm.
 */
+
+/*Using simple Array*/
 #include<bits/stdc++.h>
 using namespace std;
 class Solution {
