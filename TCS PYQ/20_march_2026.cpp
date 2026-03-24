@@ -1,5 +1,5 @@
 /*
-Problem: Gym Membership Cost Calculator
+Problem 1: Gym Membership Cost Calculator
 A gym offers membership plans for fixed durations with the following prices:
 Plans are like 1 month = 2000, 3 months = 5000, 6 months = 8000, 9 months = 11000, 12 months = 12000. We had to take input n (months) and print cost.
 
@@ -54,4 +54,45 @@ int main()
 
     return 0;
 }
+*/
+
+
+/*Problem 2: Each transaction had: 
+
+\- sender (string, person name)
+
+\- receiver (string, another person name)
+
+\- time (given like double, e.g. 10.50)
+
+\- amount (integer, sometimes large)
+
+We had to detect fraud if same sender, receiver, amount happens within 1 minute.
+
+Also one important thing:
+
+time should be printed without trailing zeros
+
+like 10.50 → 10.5, 11.00 → 11
+
+Example input:
+
+5
+
+A B 10.50 500
+
+A B 10.40 500
+
+A C 11.00 300
+
+A B 11.30 500
+
+D E 12.00 100
+
+Output:
+
+A B 10.5 500
+
+A B 10.4 500
+
 */
