@@ -10,6 +10,7 @@ void movezero(int arr[],int n)
 {
     int newarr[n];
     int j = 0;
+    //Store non-zero elements
     for(int i=0;i<n;i++)
     {
         if(arr[i]!=0)
@@ -17,19 +18,28 @@ void movezero(int arr[],int n)
             newarr[j++]=arr[i];
         }
     }
-    //Append zeros
+    //Append zeros to end
     while(j<n)
     {
         newarr[j++] = 0;
+    }
+    
+    //Copy back to original array
+    for(int i=0;i<n;i++)
+    {
+        arr[i] = newarr[i];
     }
     
 }
 int main()
 {
     int arr[] = {5,0,2,9,0,4};
-    int n = sizeof(arr[])/sizeof(arr[0]);
-    int ans = movezero(arr,n);
-    cout<<ans;
+    int n = sizeof(arr)/sizeof(arr[0]);
+    movezero(arr,n);
+    for(int i=0;i<n;i++)
+    {
+        cout << arr[i] << " ";
+    }
     return 0;
 }
 TC: O(N) SC: O(N)
