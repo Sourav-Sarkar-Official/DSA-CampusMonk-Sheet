@@ -1,3 +1,30 @@
+//Brute Force Solution - Using Set
+/*
+class Solution {
+  public:
+    vector<int> findUnion(vector<int> &a, vector<int> &b) {
+        int n1 = a.size();
+        int n2 = b.size();
+        
+        set<int> st;
+        for(int i:a)
+        {
+            st.insert(i);
+        }
+        for(int i:b)
+        {
+            st.insert(i);
+        }
+        vector<int> temp;
+        for(auto it:st)
+        {
+            temp.push_back(it);
+        }
+        return temp;
+    }
+};
+*/
+//Optimal Solution - Two Pointer Approach
 /*
 class Solution {
 public:
